@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet.css">
+    <title>Accueil</title>
+</head>
+<body>
+    <div class="serchFiltre">
+        <div class="titre">GREEN</div>
+        <div class="filtre">
+            <select id="filtre" name="filtre">
+                
+            </select>
+        </div>
+        <div class="tri" >
+            <select id="triPrix">
+                <option value="defaut">Trier par prix</option>
+                <option value="asc">Prix croissant</option>
+                <option value="desc">Prix décroissant</option>
+            </select>
+        </div>
+        <div class="search">
+            <input type="search" name="search" id="search">
+            <img src="images\searchLogo.png" alt="">
+        </div>
+        <button class="admin" onclick="window.location.href='admin.html'">ADMIN</button>
+
+        <button id="open-cart" class="cart-icon">🛒0</button>
+        
+        <div id="cart" class="cart hidden">
+        <div class="cart-header">
+            <h2>Panier</h2>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div class="cart-item">
+        
+        </div>
+        <div class="cart-footer">
+            <p>Total: <strong>$0.00</strong></p>
+        </div>
+        </div>
+    </div>
+    <div class="logo">
+        <p id="logotitre">GREEN</p>
+        <p>100% naturelle, renforce les cheveux, <br>stimule la pousse et réduit la chute des cheveux.</p>
+    </div>
+    <div class="categories">
+        <p>CATEGORIES</p>
+        <div class="catImg">
+            <img src="images\categorie1.jpg" alt="" id="Hydratation">
+            <img src="images\categorie2.jpg" alt="" id="Nettoyage" >
+            <img src="images\categorie3.jpg" alt="" id="Nutrition" >
+            <img src="images\categorie4.jpg" alt="" id="Exfoliation" >
+        </div>
+        <div class="catName">
+            <label for="">Hydratation</label>
+            <label for="">Nettoyage</label>
+            <label for="">Nutrition</label>
+            <label for="">Exfoliation</label>
+        </div>
+        <p id="">LISTE PRODUITS</p>
+    </div>
+    <div class="Produits" id="produits-container">
+
+    </div>
+    <div class="overlay" id="popup">
+        
+    </div>
+    <div class="bottom">
+        GREEN
+    </div>
+    <script type="module" src="accueil.js"></script>
+</body>
+</html>
