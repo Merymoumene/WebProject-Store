@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet.css">
+    <title>Accueil</title>
+</head>
+<body>
+    <div class="serchFiltre">
+        <div class="titre">GREEN</div>
+        <div class="filtre">
+            <select id="filtre" name="filtre">
+                
+            </select>
+        </div>
+        <div class="tri" >
+            <select id="triPrix">
+                <option value="defaut">Trier par prix</option>
+                <option value="asc">Prix croissant</option>
+                <option value="desc">Prix décroissant</option>
+            </select>
+        </div>
+        <div class="search">
+            <input type="search" name="search" id="search">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <button class="admin" onclick="window.location.href='admin.html'">ADMIN</button>
+
+        <button id="open-cart" class="cart-icon">🛒0</button>
+        
+        <div id="cart" class="cart hidden">
+        <div class="cart-header">
+            <h2>Panier</h2>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div class="cart-item">
+        
+        </div>
+        <div class="cart-footer">
+            <p>Total: <strong>$0.00</strong></p>
+        </div>
+        </div>
+    </div>
+    <div class="logo">
+        <p id="logotitre">GREEN</p>
+        <p>100% naturelle, renforce les cheveux, <br>stimule la pousse et réduit la chute des cheveux.</p>
+    </div>
+    <div class="categories">
+        <p>Votre routine parfaite</p>
+        <div class="catImg">
+            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=194,h=194,fit=crop/greenshopA1aB8/design-sem-nome---2025-02-06t185444.636-mePb2WqXVxfyK4o5.png" alt="" id="Fraîcheur">
+            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=194,h=194,fit=crop/greenshopA1aB8/2-mP42B6Mkw1ubLrr5.jpg" alt="" id="Douceur" >
+            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=194,h=194,fit=crop/greenshopA1aB8/1-YrDq5OWzJvHEjEbK.jpg" alt="" id="Vitamines" >
+            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=194,h=194,fit=crop/greenshopA1aB8/3-A85EL7MaGLhB74rO.jpg" alt="" id="Naturel" >
+        </div>
+        <div class="catName">
+            <label for="">Fraîcheur</label>
+            <label for="">Douceur</label>
+            <label for="">Vitamines</label>
+            <label for="">Naturel</label>
+        </div>
+        <p id="">LISTE PRODUITS</p>
+    </div>
+    <div class="Produits" id="produits-container">
+
+    </div>
+    <div class="overlay" id="popup">
+        
+    </div>
+    <div class="bottom">
+        GREEN
+    </div>
+    <script type="module" src="accueil.js"></script>
+</body>
+</html>
