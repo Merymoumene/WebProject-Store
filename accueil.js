@@ -7,7 +7,7 @@ function afficherProduits(produitsAAfficher) {
     produitsAAfficher.forEach(produit => {
         const produitHTML = `
             <div class="produit" id="${produit.id}">
-                <div>
+                <div class="imgDiv">
                     <img src="${produit.image}" alt="" class="imgProduit ${produit.categorie}">
                 </div>
                 <div class="NameProd">
