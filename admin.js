@@ -110,12 +110,11 @@ window.ouvrirPopupmodif = function(bouton) {
         return;
     }
 
-    // Créer la liste déroulante des catégories à partir de la variable `categories`
     const categorieOptions = categories.map(categorie => {
         return `<option value="${categorie}" ${produit.categorie === categorie ? 'selected' : ''}>${categorie}</option>`;
-    }).join(""); // .join() permet de combiner les options en une seule chaîne HTML
+    }).join("");
 
-    // Générer le formulaire de modification avec les données du produit
+    
     const produitHTML = `
         <div class="popup">
             <section>
@@ -145,7 +144,7 @@ window.modifierProduit = function(produitId) {
     const categorie = document.getElementById('categorieProduit').value;
     const description = document.getElementById('descriptionProduit').value;
 
-    // Trouve le produit à modifier
+    
     const produit = produits.find(p => p.id === produitId);
 
     if (produit) {
@@ -155,7 +154,7 @@ window.modifierProduit = function(produitId) {
         produit.categorie = categorie;
         produit.description = description;
 
-        saveProduits(); // Assure-toi que les modifications sont bien sauvegardées
+        saveProduits();
         alert('Produit modifié avec succès !');
         location.reload();
     } else {
@@ -236,12 +235,12 @@ window.ouvrirPopupAjoutProduit = function() {
     const container = document.getElementById('popup');
     container.innerHTML = '';
 
-    // Créer la liste déroulante des catégories à partir de la variable `categories`
+   
     const categorieOptions = categories.map(categorie => {
         return `<option value="${categorie}">${categorie}</option>`;
-    }).join(""); // .join() permet de combiner les options en une seule chaîne HTML
+    }).join(""); 
 
-    // HTML du formulaire avec un select pour la catégorie
+    
     const produitHTML = `
         <div class="popup">
             <section>
